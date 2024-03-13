@@ -12,6 +12,6 @@ def data():
     progression = list(range(first_number, first_number + count * step, step))
     correct_index = choice(range(len(progression)))
     correct_answer = str(progression[correct_index])
-    progression[correct_index] = '. .'
+    progression[correct_index] = '..'
     finished_progression = ' '.join([str(num) for num in progression])
     return finished_progression, correct_answer
