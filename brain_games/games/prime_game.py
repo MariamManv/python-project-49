@@ -1,16 +1,8 @@
-#!/usr/bin/env python3
-
-
 from random import randint
+from brain_games.games.gcd_game import get_all_divisors
 
 
-main_game_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-def get_all_divisors(number):
-    divisors = []
-    for i in range(1, int(number/2)+1):
-        if number % i == 0:
-            divisors.append(i)
-    return divisors
+MAIN_GAME_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def data():

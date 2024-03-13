@@ -1,10 +1,7 @@
-#!/usr/bin/env python3
-
-
 from random import randint
 
 
-main_game_question = 'Find the greatest common divisor of given numbers.'
+MAIN_GAME_QUESTION = 'Find the greatest common divisor of given numbers.'
 def get_all_divisors(number):
     divisors = set()
     for i in range(1, number+1):

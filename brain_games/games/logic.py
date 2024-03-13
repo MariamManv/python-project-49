@@ -11,7 +11,7 @@ def hello():
 
 def common_logic(specific_game):
     name = hello()
-    print(specific_game.main_game_question)
+    print(specific_game.MAIN_GAME_QUESTION)
     count = 0
     while count < 3:
         game_data = specific_game.data()
