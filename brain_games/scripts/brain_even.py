@@ -35,10 +35,10 @@ def main():
                 print(f'Congratulations, {name}!')
         else:
             if random_number % 2 == 0:
-                answer = 'yes'
+                result = 'yes'
             else:
-                answer = 'no'
-            print(f"""'{user_input}' is wrong answer ;(. Correct answer was '{answer}'.
+                result = 'no'
+            print(f"""'{user_input}' is wrong answer ;(. Correct answer was '{result}'.
 Let's try again, {name}""")
             break
 
