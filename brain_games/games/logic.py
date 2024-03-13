@@ -23,5 +23,5 @@ def common_logic(specific_game):
                 print(f'Congratulations, {name}!')
         else:
             print(f"{user_input} is wrong answer ;(. \
-Correct answer was '{game_data[1]}'.\nLet's try again, {name}")
+Correct answer was '{game_data[1]}'.\nLet's try again, {name}!")
             break
