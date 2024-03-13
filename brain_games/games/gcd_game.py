@@ -2,12 +2,15 @@ from random import randint
 
 
 MAIN_GAME_QUESTION = 'Find the greatest common divisor of given numbers.'
+
+
 def get_all_divisors(number):
     divisors = set()
-    for i in range(1, number+1):
+    for i in range(1, number + 1):
         if number % i == 0:
             divisors.add(i)
     return divisors
+
 
 def data():
     random_number_1 = randint(1, 100)

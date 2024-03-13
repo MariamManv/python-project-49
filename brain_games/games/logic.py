@@ -8,7 +8,6 @@ def hello():
     return name
 
 
-
 def common_logic(specific_game):
     name = hello()
     print(specific_game.MAIN_GAME_QUESTION)
@@ -23,5 +22,6 @@ def common_logic(specific_game):
             if count == 3:
                 print(f'Congratulations, {name}!')
         else:
-            print(f"{user_input} is wrong answer ;(. Correct answer was '{game_data[1]}'.\nLet's try again, {name}")
+            print(f"{user_input} is wrong answer ;(. \
+Correct answer was '{game_data[1]}'.\nLet's try again, {name}")
             break

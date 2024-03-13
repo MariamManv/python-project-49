@@ -3,6 +3,8 @@ from random import choice
 
 
 MAIN_GAME_QUESTION = 'What is the result of the expression?'
+
+
 def data():
     random_number_1 = randint(1, 100)
     random_number_2 = randint(1, 100)

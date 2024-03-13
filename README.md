@@ -1,3 +1,7 @@
+This project uses Python(version 3.6 and up), pip (version 19 and up), poetry (verion 1.2.0 and up).
+Go check them out if you don't have them locally installed.
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MariamManv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MariamManv/python-project-49/actions)
 
