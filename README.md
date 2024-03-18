@@ -6,16 +6,25 @@ The 'Brain_games' project is a collection of five mathematical games developed u
 
    git clone https://github.com/MariamManv/python-project-49.git
 
-2. Make sure you have Python 3.x installed on your machine.
+2. Ensure that Poetry is installed on your local machine. If you don't have Poetry installed, you can install it by running the following command:
 
-3. Install the necessary dependencies by running the command:
+   pip install poetry
 
-   pip install -r requirements.txt
+3. Navigate to the root directory of the project:
 
-4. Run the main project file:
+   cd python-project-49
 
-   python main.py
-   git clone https://github.com/MariamManv/python-project-49.git
+4. Install the project dependencies by running the command:
+
+   poetry install
+
+5. Run the script of the game, that you want to play:
+brain-even(this game gives you a bunch of numbers, you'll have to detirmine if they're even or not) 
+brain-calc(this game gives you a bunch of mathematical equasions that you'll have to solve)
+brain-gcd(this game gives you two numbers, you'll have to find their grestest common devidor) 
+brain-progression(this game gives you a progression with one missing number, you'll hae ti guess that number)
+brain-prime(this game gives you a bunch of numbers, you'll have to detirmine if they're prime or not)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MariamManv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MariamManv/python-project-49/actions)
 
