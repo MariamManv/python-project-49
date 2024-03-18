@@ -19,11 +19,16 @@ The 'Brain_games' project is a collection of five mathematical games developed u
    poetry install
 
 5. Run the script of the game, that you want to play:
-brain-even(this game gives you a bunch of numbers, you'll have to detirmine if they're even or not) 
-brain-calc(this game gives you a bunch of mathematical equasions that you'll have to solve)
-brain-gcd(this game gives you two numbers, you'll have to find their grestest common devidor) 
-brain-progression(this game gives you a progression with one missing number, you'll hae ti guess that number)
-brain-prime(this game gives you a bunch of numbers, you'll have to detirmine if they're prime or not)
+
+    brain-even : this game gives you a bunch of numbers, you'll have to detirmine if they're even or not) 
+
+    brain-calc : this game gives you a bunch of mathematical equasions that you'll have to solve)
+
+    brain-gcd : this game gives you two numbers, you'll have to find their grestest common devidor) 
+
+    brain-progression : this game gives you a progression with one missing number, you'll hae ti guess that number)
+
+    brain-prime : this game gives you a bunch of numbers, you'll have to detirmine if they're prime or not)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MariamManv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MariamManv/python-project-49/actions)
