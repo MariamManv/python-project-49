@@ -1,7 +1,21 @@
-This project uses Python(version 3.6 and up), pip (version 19 and up), poetry (verion 1.2.0 and up).
-Go check them out if you don't have them locally installed.
+### 'Brain_games' project
+The 'Brain_games' project is a collection of five mathematical games developed using Python. In these games, users are presented with various math problems to solve, allowing them to develop their skills and improve their scores.
 
+### Installation and Usage
+1. Clone the repository to your local machine:
 
+   git clone https://github.com/MariamManv/python-project-49.git
+
+2. Make sure you have Python 3.x installed on your machine.
+
+3. Install the necessary dependencies by running the command:
+
+   pip install -r requirements.txt
+
+4. Run the main project file:
+
+   python main.py
+   git clone https://github.com/MariamManv/python-project-49.git
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MariamManv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MariamManv/python-project-49/actions)
 
