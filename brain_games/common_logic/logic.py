@@ -1,15 +1,10 @@
 import prompt
 
 
-def hello():
+def common_logic(specific_game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def common_logic(specific_game):
-    name = hello()
     print(specific_game.MAIN_GAME_QUESTION)
     count = 0
     while count < 3:
