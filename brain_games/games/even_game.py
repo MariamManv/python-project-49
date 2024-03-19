@@ -7,8 +7,5 @@ otherwise answer "no".')
 
 def data():
     random_number = randint(1, 1000)
-    if random_number % 2 == 0:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    correct_answer = random_number % 2 == 0 and 'yes' or 'no'
     return random_number, correct_answer
