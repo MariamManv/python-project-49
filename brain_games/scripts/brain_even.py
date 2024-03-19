@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games import logic
+from brain_games.common_logic import logicy
 from brain_games.games import even_game
 
 
