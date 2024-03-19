@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games.gcd_game import get_all_divisors
 
 
 MAIN_GAME_QUESTION = ('Answer "yes" if given number is prime. \
