@@ -15,7 +15,7 @@ def is_even():
 
 def data():
     random_number, answer = is_even()
-    if answer == True:
+    if answer is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

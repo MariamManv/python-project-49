@@ -24,7 +24,7 @@ def prime():
 
 def data():
     random_number, answer = prime()
-    if answer == True:
+    if answer is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
