@@ -10,16 +10,10 @@ def prime():
     if random_number < 2:
         return random_number, False
     else:
-        all_divisors = set()
-        for i in range(1, random_number + 1):
+        for i in range(2, (random_number // 2) + 1):
             if random_number % i == 0:
-                all_divisors.add(i)
-        prime_divisors = {1, random_number}
-        divisor_difference = all_divisors.difference(prime_divisors)
-        if divisor_difference == set():
-            return random_number, True
-        else:
-            return random_number, False
+                return random_number, False
+        return random_number, True
 
 
 def data():
