@@ -5,7 +5,7 @@ from random import choice
 MAIN_GAME_QUESTION = 'What number is missing in the progression?'
 
 
-def data():
+def create_data():
     first_number = randint(1, 100)
     step = randint(1, 15)
     count = 10

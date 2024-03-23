@@ -6,7 +6,7 @@ from brain_games.games import gcd_game
 
 
 def main():
-    logic.common_logic(gcd_game)
+    logic.execute_brain_games(gcd_game)
 
 
 if __name__ == '__main__':

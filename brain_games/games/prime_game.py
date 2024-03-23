@@ -5,19 +5,19 @@ MAIN_GAME_QUESTION = ('Answer "yes" if given number is prime. \
 Otherwise answer "no".')
 
 
-def prime():
-    random_number = randint(1, 100)
-    if random_number < 2:
-        return random_number, False
+def is_prime(number):
+    if number < 2:
+        return False
     else:
-        for i in range(2, (random_number // 2) + 1):
-            if random_number % i == 0:
-                return random_number, False
-        return random_number, True
+        for i in range(2, (number // 2) + 1):
+            if number % i == 0:
+                return False
+        return True
 
 
-def data():
-    random_number, answer = prime()
+def create_data():
+    random_number = randint(1, 100)
+    answer = is_prime(random_number)
     if answer is True:
         correct_answer = 'yes'
     else:

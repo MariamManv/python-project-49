@@ -5,16 +5,13 @@ MAIN_GAME_QUESTION = ('Answer "yes" if the number is even, \
 otherwise answer "no".')
 
 
-def is_even():
+def is_even(number):
+    return number % 2 == 0
+
+
+def create_data():
     random_number = randint(1, 1000)
-    if random_number % 2 == 0:
-        return random_number, True
-    else:
-        return random_number, False
-
-
-def data():
-    random_number, answer = is_even()
+    answer = is_even(random_number)
     if answer is True:
         correct_answer = 'yes'
     else:
