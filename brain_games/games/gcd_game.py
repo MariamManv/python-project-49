@@ -18,10 +18,13 @@ def find_gcd(num1, num2):
     return max_divisor
 
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
+
 def create_data():
-    random_number_1 = randint(1, 100)
-    random_number_2 = randint(1, 100)
+    random_number_1 = randint(MIN_NUMBER, MAX_NUMBER)
+    random_number_2 = randint(MIN_NUMBER, MAX_NUMBER)
     max_divisor = find_gcd(random_number_1, random_number_2)
-    given_numbers = (f'{random_number_1} {random_number_2}')
     correct_answer = str(max_divisor)
-    return given_numbers, correct_answer
+    return (f'{random_number_1} {random_number_2}'), correct_answer

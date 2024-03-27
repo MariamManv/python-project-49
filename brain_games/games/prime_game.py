@@ -15,8 +15,12 @@ def is_prime(number):
         return True
 
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
+
 def create_data():
-    random_number = randint(1, 100)
+    random_number = randint(MIN_NUMBER, MAX_NUMBER)
     answer = is_prime(random_number)
     if answer is True:
         correct_answer = 'yes'
