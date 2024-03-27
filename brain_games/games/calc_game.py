@@ -20,4 +20,4 @@ def create_data():
         correct_answer = str(random_number_1 * random_number_2)
     return (
         f'{random_number_1} {random_operation} {random_number_2}'
-        ), correct_answer
+    ), correct_answer
