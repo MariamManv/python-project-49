@@ -15,8 +15,8 @@ def get_question_and_correct_answer():
     common_difference = randint(MIN_COMMON_DIFFERENCE_NUMBER,
     MAX_COMMON_DIFFERENCE_NUMBER)
     progression = list(range(initial_term,
-        initial_term + COUNT * common_difference, common_difference)
-    )
+                             initial_term + COUNT * common_difference,
+                             common_difference))
     correct_index = choice(range(len(progression)))
     correct_answer = str(progression[correct_index])
     progression[correct_index] = '..'
