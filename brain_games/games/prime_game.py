@@ -1,7 +1,7 @@
 from random import randint
 
 
-MAIN_GAME_QUESTION = ('Answer "yes" if given number is prime. \
+RULES_OF_THE_GAME = ('Answer "yes" if given number is prime. \
 Otherwise answer "no".')
 
 
@@ -19,10 +19,9 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-def create_data():
+def get_question_and_correct_answer():
     random_number = randint(MIN_NUMBER, MAX_NUMBER)
-    answer = is_prime(random_number)
-    if answer is True:
+    if is_prime(random_number) is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

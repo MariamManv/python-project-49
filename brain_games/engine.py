@@ -1,22 +1,25 @@
 import prompt
 
 
+ROUND_NUMBER = 3
+
+
 def execute_brain_games(specific_game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(specific_game.MAIN_GAME_QUESTION)
+    print(specific_game.RULES_OF_THE_GAME)
     count = 0
-    while count < 3:
-        game_data = specific_game.create_data()
-        print(f'Question: {game_data[0]}')
+    while count < ROUND_NUMBER:
+        question, correct_answer = specific_game.get_question_and_correct_answer()
+        print(f'Question: {question}')
         user_input = input('Your answer: ')
-        if user_input == game_data[1]:
+        if user_input == correct_answer:
             count += 1
             print('Correct!')
-            if count == 3:
+            if count == ROUND_NUMBER:
                 print(f'Congratulations, {name}!')
         else:
             print(f"{user_input} is wrong answer ;(. \
-Correct answer was '{game_data[1]}'.\nLet's try again, {name}!")
+Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
             break

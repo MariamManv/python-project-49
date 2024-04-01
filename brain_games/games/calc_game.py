@@ -2,12 +2,12 @@ from random import randint
 from random import choice
 
 
-MAIN_GAME_QUESTION = 'What is the result of the expression?'
+RULES_OF_THE_GAME = 'What is the result of the expression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 
-def create_data():
+def get_question_and_correct_answer():
     random_number_1 = randint(MIN_NUMBER, MAX_NUMBER)
     random_number_2 = randint(MIN_NUMBER, MAX_NUMBER)
     operations = ['+', '-', '*']

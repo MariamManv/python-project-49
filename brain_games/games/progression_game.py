@@ -2,18 +2,18 @@ from random import randint
 from random import choice
 
 
-MAIN_GAME_QUESTION = 'What number is missing in the progression?'
-MIN_NUMBER = 1
-MAX_NUMBER = 100
-MIN_STEP_NUMBER = 1
-MAX_STEP_NUMBER = 15
+RULES_OF_THE_GAME = 'What number is missing in the progression?'
+MIN_INITIAL_TERM_NUMBER = 1
+MAX_INITIAL_TERM_NUMBER = 100
+MIN_COMMON_DIFFERENCE_NUMBER = 1
+MAX_COMMON_DIFFERENCE_NUMBER = 15
 COUNT = 10
 
 
-def create_data():
-    first_number = randint(MIN_NUMBER, MAX_NUMBER)
-    step = randint(MIN_STEP_NUMBER, MAX_STEP_NUMBER)
-    progression = list(range(first_number, first_number + COUNT * step, step))
+def get_question_and_correct_answer():
+    initial_term = randint(MIN_INITIAL_TERM_NUMBER, MAX_INITIAL_TERM_NUMBER)
+    common_difference = randint(MIN_COMMON_DIFFERENCE_NUMBER, MAX_COMMON_DIFFERENCE_NUMBER)
+    progression = list(range(initial_term, initial_term + COUNT * common_difference, common_difference))
     correct_index = choice(range(len(progression)))
     correct_answer = str(progression[correct_index])
     progression[correct_index] = '..'
