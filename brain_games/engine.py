@@ -12,7 +12,8 @@ def execute_brain_games(specific_game):
     count = 0
     while count < ROUND_NUMBER:
         question, correct_answer = (
-        specific_game.get_question_and_correct_answer())
+            specific_game.get_question_and_correct_answer()
+        )
         print(f'Question: {question}')
         user_input = input('Your answer: ')
         if user_input == correct_answer:
